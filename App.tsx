@@ -1,10 +1,10 @@
-import { Navigation } from './components/Navigation';
-import { Hero } from './components/Hero';
-import { About } from './components/About';
-import { Projects } from './components/Projects';
-import { Experience } from './components/Experience';
-import { Contact } from './components/Contact';
-import { Footer } from './components/Footer';
+import { Navigation } from './Navigation';
+import { Hero } from './Hero';
+import { About } from './About';
+import { Projects } from './Projects';
+import { Experience } from './Experience';
+import { Contact } from './Contact';
+import { Footer } from './Footer';
 
 export default function App() {
   return (
