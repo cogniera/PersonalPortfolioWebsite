@@ -6,7 +6,7 @@ export function Footer() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-12">
         <div className="flex flex-col md:flex-row items-center justify-between gap-4 sm:gap-6">
           <div className="text-gray-400 text-xs sm:text-sm text-center md:text-left">
-            © 2025 AI Engineer. Designed with precision and purpose.
+            © 2025 AI Enthusiast. Designed with precision and purpose.
           </div>
 
           <div className="flex gap-4 sm:gap-6">
