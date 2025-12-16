@@ -8,60 +8,59 @@ export function Projects() {
 
   const projects = [
     {
-      title: "Enterprise RAG Platform",
-      category: "LLM Infrastructure",
-      shortDescription: "Production-grade retrieval system serving 10K+ daily queries",
-      description: "Built a production-grade retrieval-augmented generation system serving 10K+ daily queries. Implemented custom embedding pipelines, vector databases, and fine-tuned retrieval strategies.",
-      problem: "Enterprise needed intelligent document retrieval at scale with high accuracy and low latency",
-      technologies: ["LangChain", "Pinecone", "GPT-4", "FastAPI", "PostgreSQL"],
-      github: "#",
-      gradient: "from-blue-500/20 to-cyan-500/20",
-      glowColor: "rgba(59, 130, 246, 0.5)"
-    },
+  title: "SmartRAG++",
+  category: "LLM Infrastructure",
+  shortDescription: "Next-generation retrieval-augmented generation system (in development)",
+  description: "Designing a next-generation retrieval-augmented generation (RAG) platform focused on improving retrieval accuracy, context selection, and scalability beyond baseline RAG systems. The project explores advanced chunking strategies, hierarchical and graph-based retrieval, multi-stage reranking, and evaluation-driven optimization for long-form and technical documents. Currently in active development.",
+  problem: "Standard RAG pipelines struggle with long documents, fragmented context, and retrieval noise, leading to hallucinations and low-quality responses",
+  technologies: ["Python", "LangChain", "Vector Databases", "LLM APIs", "Embedding Models", "Reranking Techniques"],
+  github: "#",
+  gradient: "from-blue-500/20 to-cyan-500/20",
+  glowColor: "rgba(59, 130, 246, 0.5)"
+}, {
+  title: "Spotify Song Popularity Predictor",
+  category: "Machine Learning",
+  shortDescription: "End-to-end ML pipeline for predicting Spotify track popularity",
+  description: "Designed and implemented a complete machine learning pipeline to predict Spotify song popularity using audio features and genre encoding. Covered data preprocessing, feature scaling, model training with cross-validation, evaluation, and deployment through an interactive Streamlit application.",
+  problem: "Understanding whether track popularity can be predicted using audio features alone requires robust preprocessing, modeling, and evaluation pipelines",
+  technologies: ["Python", "pandas", "NumPy", "scikit-learn", "Streamlit", "Plotly", "Docker"],
+  github: "#",
+  gradient: "from-orange-500/20 to-red-500/20",
+  glowColor: "rgba(249, 115, 22, 0.5)"
+},
     {
-      title: "Computer Vision Pipeline",
-      category: "Deep Learning",
-      shortDescription: "Real-time object detection processing 1M+ images daily",
-      description: "Designed end-to-end CV pipeline for real-time object detection and classification. Achieved 94% accuracy with optimized inference latency under 50ms.",
-      problem: "Required real-time object detection with sub-50ms latency while maintaining 94%+ accuracy",
-      technologies: ["PyTorch", "YOLO", "TensorRT", "Docker", "Kubernetes"],
-      github: "#",
-      gradient: "from-purple-500/20 to-pink-500/20",
-      glowColor: "rgba(168, 85, 247, 0.5)"
-    },
+  title: "PDF Summarizer AI",
+  category: "LLM Applications",
+  shortDescription: "AI-powered PDF summarization and question-answering platform",
+  description: "Built a full-stack AI application that allows users to upload PDFs and interact with them through semantic search and retrieval-augmented generation. Implemented intelligent text chunking, vector embeddings, similarity search with a vector database, and context-grounded Q&A using modern LLM tooling.",
+  problem: "Users need an efficient way to extract insights and answer questions from long, unstructured PDF documents without manual reading",
+  technologies: ["React", "TypeScript", "Node.js", "Express", "LangChain", "OpenAI", "Qdrant", "Docker"],
+  github: "#",
+  gradient: "from-purple-500/20 to-indigo-500/20",
+  glowColor: "rgba(139, 92, 246, 0.5)"
+},
     {
-      title: "MLOps Framework",
-      category: "Infrastructure",
-      shortDescription: "Automated ML pipeline reducing deployment time by 90%",
-      description: "Created comprehensive MLOps framework with automated training pipelines, model versioning, and A/B testing infrastructure for ML experimentation at scale.",
-      problem: "Manual ML deployment took weeks; needed automated pipeline for rapid experimentation",
-      technologies: ["Kubernetes", "MLflow", "Airflow", "Terraform", "AWS"],
-      github: "#",
-      gradient: "from-indigo-500/20 to-blue-500/20",
-      glowColor: "rgba(99, 102, 241, 0.5)"
-    },
+  title: "67 Clock Bot",
+  category: "Robotics & Computer Vision",
+  shortDescription: "Autonomous vision-based robot using real-time perception and control",
+  description: "Built an autonomous robot that reacts to nearby people and obstacles using real-time computer vision and sensor fusion. Combined YOLOv8 person detection, MiDaS depth-from-RGB estimation, ultrasonic telemetry, and a finite-state machine to produce stable and explainable robotic behavior in real-world environments.",
+  problem: "Creating reliable autonomous behavior with limited hardware requires robust perception, sensor fusion, and predictable control logic",
+  technologies: ["Python", "YOLOv8", "MiDaS", "OpenCV", "PyTorch", "ESP32", "UDP Networking"],
+  github: "#",
+  gradient: "from-sky-500/20 to-blue-500/20",
+  glowColor: "rgba(56, 189, 248, 0.5)"
+},
     {
-      title: "Neural Architecture Search",
-      category: "Research",
-      shortDescription: "Automated model design reducing training time by 40%",
-      description: "Developed automated neural architecture search system for optimizing deep learning models",
-      problem: "Manual architecture design was time-consuming and suboptimal for complex tasks",
-      technologies: ["PyTorch", "Ray", "Optuna", "Python", "CUDA"],
-      github: "#",
-      gradient: "from-emerald-500/20 to-teal-500/20",
-      glowColor: "rgba(16, 185, 129, 0.5)"
-    },
-    {
-      title: "Real-time Analytics Engine",
-      category: "Data Engineering",
-      shortDescription: "Stream processing platform handling 100K events/sec",
-      description: "Built real-time analytics engine processing high-velocity data streams with sub-second latency",
-      problem: "Legacy batch processing couldn't meet real-time analytics requirements at scale",
-      technologies: ["Apache Kafka", "Flink", "Redis", "ClickHouse", "Go"],
-      github: "#",
-      gradient: "from-orange-500/20 to-red-500/20",
-      glowColor: "rgba(249, 115, 22, 0.5)"
-    }
+  title: "Bjorn",
+  category: "Game Development",
+  shortDescription: "2D action-adventure game built with MonoGame and a custom engine",
+  description: "Developed a 2D action-adventure game using MonoGame and a custom GameUtility framework. Implemented multiple game states, tile-based maps, player combat mechanics, inventory and crafting systems, enemy AI with animations, and quest-based progression culminating in a final boss encounter.",
+  problem: "Building a complete game required managing state transitions, real-time combat systems, AI behavior, and complex inventory mechanics within a custom engine",
+  technologies: ["C#", "MonoGame", ".NET 6", "Custom GameUtility Library"],
+  github: "#",
+  gradient: "from-emerald-500/20 to-teal-500/20",
+  glowColor: "rgba(16, 185, 129, 0.5)"
+}
   ];
 
   const handCards = projects.slice(0, 3);
