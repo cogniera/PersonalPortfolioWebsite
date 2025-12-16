@@ -3,39 +3,27 @@ import { motion } from 'motion/react';
 export function Experience() {
   const experiences = [
     {
-      period: "2023 - Present",
-      role: "Senior ML Engineer",
-      company: "AI Research Lab",
-      description: "Leading development of large-scale language models and RAG systems. Built infrastructure serving millions of AI-powered queries monthly.",
-      achievements: [
-        "Designed and deployed production LLM pipeline reducing inference latency by 60%",
-        "Led team of 5 engineers building custom embedding models",
-        "Implemented MLOps practices cutting deployment time from weeks to hours"
-      ]
-    },
+  period: "2025 - Present",
+  role: "Software Development Intern",
+  company: "Sample Junction",
+  description: "Worked on automated testing infrastructure to improve software reliability and release quality. Focused on building maintainable test frameworks and collaborating closely with developers to validate production features.",
+  achievements: [
+    "Developed and maintained automated test suites using Java, Selenium, and the Page Object Model (POM)",
+    "Executed functional and regression testing across multiple releases, identifying defects and verifying fixes",
+    "Collaborated with developers to improve test coverage and overall system reliability"
+  ]
+},
     {
-      period: "2021 - 2023",
-      role: "Machine Learning Engineer",
-      company: "Tech Startup",
-      description: "Developed computer vision and NLP models for enterprise clients. Architected scalable ML infrastructure from ground up.",
-      achievements: [
-        "Built real-time object detection system processing 1M+ images daily",
-        "Created automated ML pipeline reducing model training time by 40%",
-        "Published 3 papers on efficient transformer architectures"
-      ]
-    },
-    {
-      period: "2019 - 2021",
-      role: "AI Research Engineer",
-      company: "University Lab",
-      description: "Conducted research in deep learning optimization and model interpretability. Collaborated on projects with industry partners.",
-      achievements: [
-        "Published research on neural architecture search in top-tier conferences",
-        "Developed open-source tools for model explainability (2K+ GitHub stars)",
-        "Mentored 10+ graduate students on ML research projects"
-      ]
-    }
-  ];
+  period: "Sep 2025 - Present",
+  role: "Flight Autonomy Developer",
+  company: "Waterloo Aerial Robotics Group (Autonomy Sub-team)",
+  description: "Contributed to the autonomy stack of an unmanned aerial system, focusing on telemetry handling, control logic, and vision-based navigation for simulated flight environments.",
+  achievements: [
+    "Implemented MAVLink heartbeat, telemetry, and command workers for simulated autonomy control",
+    "Parsed ATTITUDE and POSITION telemetry messages to compute yaw and altitude corrections toward target points",
+    "Developed vision-based landing marker detection achieving 90%+ accuracy in controlled tests"
+  ]
+}];
 
   return (
     <section className="py-20 sm:py-32 relative overflow-hidden">
