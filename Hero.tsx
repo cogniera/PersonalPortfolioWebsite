@@ -39,7 +39,7 @@ export function Hero() {
                   }}
                 />
                 <ImageWithFallback
-                  src="./image.jpeg" // ← placeholder ONLY
+                  src="./images/image.jpeg" // ← placeholder ONLY
                   alt="Profile picture"
                   className="w-32 h-32 rounded-full object-cover"
                 />
