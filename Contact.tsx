@@ -36,7 +36,7 @@ export function Contact() {
           >
             <div className="flex justify-center gap-4 sm:gap-6">
               <a
-                href="#"
+                href="https://github.com/cogniera"
                 className="group flex flex-col items-center gap-3 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-white/5 to-white/0 border border-white/10 hover:border-blue-500/30 active:border-blue-500/40 transition-all duration-300 min-w-[100px] sm:min-w-[120px]"
               >
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-blue-500/30 flex items-center justify-center group-hover:scale-110 group-active:scale-105 transition-transform duration-300">
@@ -46,7 +46,7 @@ export function Contact() {
               </a>
               
               <a
-                href="#"
+                href="https://www.linkedin.com/in/paarth-sharma-engineering/"
                 className="group flex flex-col items-center gap-3 p-6 sm:p-8 rounded-3xl bg-gradient-to-br from-white/5 to-white/0 border border-white/10 hover:border-blue-500/30 active:border-blue-500/40 transition-all duration-300 min-w-[100px] sm:min-w-[120px]"
               >
                 <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl bg-gradient-to-br from-blue-600/20 to-purple-600/20 border border-blue-500/30 flex items-center justify-center group-hover:scale-110 group-active:scale-105 transition-transform duration-300">
