@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Mail, Github, Linkedin } from 'lucide-react';
-import { ImageWithFallback } from "./figma/ImageWithFallback.tsx";
+import { ImageWithFallback } from "./ImageWithFallback.tsx";
 
 export function Hero() {
   return (
@@ -39,7 +39,7 @@ export function Hero() {
                   }}
                 />
                 <ImageWithFallback
-                  src="./figma/image.jpeg" // ← placeholder ONLY
+                  src="./image.jpeg" // ← placeholder ONLY
                   alt="Profile picture"
                   className="w-32 h-32 rounded-full object-cover"
                 />
