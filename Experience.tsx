@@ -11,6 +11,7 @@ export function Experience() {
     "Developed and maintained automated test suites using Java, Selenium, and the Page Object Model (POM)",
     "Executed functional and regression testing across multiple releases, identifying defects and verifying fixes",
     "Collaborated with developers to improve test coverage and overall system reliability"
+    "Used PhP (laravel) on the website with react and css"
   ]
 },
     {
@@ -26,7 +27,7 @@ export function Experience() {
 }];
 
   return (
-    <section className="py-20 sm:py-32 relative overflow-hidden">
+    <section id = "experience" className="py-20 sm:py-32 relative overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-transparent via-blue-950/5 to-transparent" />
       
