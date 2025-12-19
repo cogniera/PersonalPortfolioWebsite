@@ -71,7 +71,7 @@ export function Resume() {
           </div>
 
           {/* Embedded PDF */}
-          <div className="w-full h-[70vh] bg-black">
+          <div className="w-full h-[90vh] bg-black">
             <iframe
               src="/resume.pdf"
               title="Resume"
