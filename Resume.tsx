@@ -73,9 +73,9 @@ export function Resume() {
           {/* Embedded PDF */}
           <div className="w-full h-[90vh] bg-black">
             <embed
-              src="/resume.pdf"
-              title="Resume"
-              className="w-full h-full"
+              src="/resume.pdf#zoom=130&view=FitH"
+              type="application/pdf"
+              className="w-full h-full rounded-b-2xl"
             />
           </div>
         </motion.div>
