@@ -251,7 +251,7 @@ function ProjectCard({ project, index, isFlipped, onClick, isActive, isDeck = fa
             </div>
 
             {/* Hover Overlay */}
-            <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 flex items-center justify-center bg-black/40 backdrop-blur-sm rounded-2xl">
+            <div className="pointer-events-none opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute inset-0 bg-black/30 rounded-2xl">
               <div className="text-center">
                 <Eye className="w-8 h-8 text-blue-400 mx-auto mb-2" />
                 <span className="text-white text-sm">Tap to View Details</span>
