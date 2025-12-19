@@ -3,7 +3,7 @@ import { Mail, Github, Linkedin } from 'lucide-react';
 
 export function Contact() {
   return (
-    <section className="py-20 sm:py-32 relative overflow-hidden">
+    <section id = "contact" className="py-20 sm:py-32 relative overflow-hidden">
       {/* Gradient background effects */}
       <div className="absolute inset-0 overflow-hidden">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full sm:w-[1000px] h-[600px] bg-gradient-to-r from-blue-600/10 via-purple-600/10 to-pink-600/10 rounded-full blur-[120px]" />
@@ -21,7 +21,7 @@ export function Contact() {
             <span className="text-blue-400 uppercase tracking-wider mb-4 block text-sm">Get in Touch</span>
             <h2 className="text-white mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl">Let's Build Something</h2>
             <p className="text-base sm:text-xl text-gray-400 max-w-2xl mx-auto px-4">
-              Interested in collaboration, consulting, or just want to discuss AI? 
+              Interested in collaboration, consulting, or just want to discuss about RAG ? 
               I'm always open to interesting conversations and opportunities.
             </p>
           </div>
