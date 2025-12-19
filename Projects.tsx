@@ -218,6 +218,7 @@ function ProjectCard({ project, index, isFlipped, onClick, isActive, isDeck = fa
           <div className="absolute top-0 right-0 w-24 h-24 opacity-20">
             <div className={`absolute inset-0 bg-gradient-to-br ${project.gradient} blur-2xl`} />
           </div>
+          </div>
         </motion.div>
       </div>
 
