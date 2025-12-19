@@ -7,24 +7,24 @@ export function Projects() {
   const [activeCard, setActiveCard] = useState(1); // Center card is active by default
 
   const projects = [
-    {
-  title: "SmartRAG++",
+   {
+  title: "Segmentation Study Phase 1",
   category: "LLM Infrastructure",
-  shortDescription: "Next-generation retrieval-augmented generation system (in development)",
-  description: "Designing a next-generation retrieval-augmented generation (RAG) platform focused on improving retrieval accuracy, context selection, and scalability beyond baseline RAG systems. The project explores advanced chunking strategies, hierarchical and graph-based retrieval, multi-stage reranking, and evaluation-driven optimization for long-form and technical documents. Currently in active development.",
-  problem: "Standard RAG pipelines struggle with long documents, fragmented context, and retrieval noise, leading to hallucinations and low-quality responses",
-  technologies: ["Python", "LangChain", "Vector Databases", "LLM APIs", "Embedding Models", "Reranking Techniques"],
-  github: "#",
+  shortDescription: "Empirical RAG systems research toward query-dependent retrieval",
+  description: "Segmentation Study Phase 1 is a systems-oriented research project investigating retrieval failures in retrieval-augmented generation (RAG) pipelines for long and technical documents. Phase 1 empirically studies the limitations imposed by query-independent document segmentation, evaluating how chunking strategies, embeddings, and multi-stage reranking interact to constrain retrieval recall. Phase 2 aims to remove this limitation by introducing query-dependent segment extraction, where retrieval units are constructed after observing the query, enabling more precise and adaptive context selection. The project emphasizes controlled evaluation, failure-mode analysis, and scalability-aware design.",
+  problem: "Most RAG systems rely on query-independent document segmentation, which imposes a hard recall ceiling in long and technical documents and prevents rerankers from recovering missing evidence",
+  technologies: ["Python", "LangChain", "Vector Databases", "Embedding Models", "Reranking Models", "Retrieval Evaluation", "lumber chunker", "Cohere Rerank4", "Cohere Embedding4"],
+  github: "https://github.com/cogniera/Rag_Segmentation_Study",
   gradient: "from-blue-500/20 to-cyan-500/20",
-  glowColor: "rgba(59, 130, 246, 0.5)"
-}, {
+  glowColor: "rgba(59, 130, 246, 0.5)"}
+  , {
   title: "Spotify Song Popularity Predictor",
   category: "Machine Learning",
   shortDescription: "End-to-end ML pipeline for predicting Spotify track popularity",
   description: "Designed and implemented a complete machine learning pipeline to predict Spotify song popularity using audio features and genre encoding. Covered data preprocessing, feature scaling, model training with cross-validation, evaluation, and deployment through an interactive Streamlit application.",
   problem: "Understanding whether track popularity can be predicted using audio features alone requires robust preprocessing, modeling, and evaluation pipelines",
   technologies: ["Python", "pandas", "NumPy", "scikit-learn", "Streamlit", "Plotly", "Docker"],
-  github: "#",
+  github: "https://github.com/cogniera/SpotifySongPopularityPredictor",
   gradient: "from-orange-500/20 to-red-500/20",
   glowColor: "rgba(249, 115, 22, 0.5)"
 },
@@ -35,7 +35,7 @@ export function Projects() {
   description: "Built a full-stack AI application that allows users to upload PDFs and interact with them through semantic search and retrieval-augmented generation. Implemented intelligent text chunking, vector embeddings, similarity search with a vector database, and context-grounded Q&A using modern LLM tooling.",
   problem: "Users need an efficient way to extract insights and answer questions from long, unstructured PDF documents without manual reading",
   technologies: ["React", "TypeScript", "Node.js", "Express", "LangChain", "OpenAI", "Qdrant", "Docker"],
-  github: "#",
+  github: "https://github.com/cogniera/PDFsummarizer",
   gradient: "from-purple-500/20 to-indigo-500/20",
   glowColor: "rgba(139, 92, 246, 0.5)"
 },
@@ -46,7 +46,7 @@ export function Projects() {
   description: "Built an autonomous robot that reacts to nearby people and obstacles using real-time computer vision and sensor fusion. Combined YOLOv8 person detection, MiDaS depth-from-RGB estimation, ultrasonic telemetry, and a finite-state machine to produce stable and explainable robotic behavior in real-world environments.",
   problem: "Creating reliable autonomous behavior with limited hardware requires robust perception, sensor fusion, and predictable control logic",
   technologies: ["Python", "YOLOv8", "MiDaS", "OpenCV", "PyTorch", "ESP32", "UDP Networking"],
-  github: "#",
+  github: "https://github.com/cogniera/67ClockBot",
   gradient: "from-sky-500/20 to-blue-500/20",
   glowColor: "rgba(56, 189, 248, 0.5)"
 },
@@ -57,7 +57,7 @@ export function Projects() {
   description: "Developed a 2D action-adventure game using MonoGame and a custom GameUtility framework. Implemented multiple game states, tile-based maps, player combat mechanics, inventory and crafting systems, enemy AI with animations, and quest-based progression culminating in a final boss encounter.",
   problem: "Building a complete game required managing state transitions, real-time combat systems, AI behavior, and complex inventory mechanics within a custom engine",
   technologies: ["C#", "MonoGame", ".NET 6", "Custom GameUtility Library"],
-  github: "#",
+  github: "https://github.com/cogniera/Bjorn_2D",
   gradient: "from-emerald-500/20 to-teal-500/20",
   glowColor: "rgba(16, 185, 129, 0.5)"
 }
@@ -92,7 +92,7 @@ export function Projects() {
           <span className="text-blue-400 uppercase tracking-wider mb-4 block text-sm">Featured Work</span>
           <h2 className="text-white mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl">Selected Projects</h2>
           <p className="text-base sm:text-xl text-gray-400 px-4">
-            Production AI systems built for scale and impact
+            Side Projects for exploring different technologies
           </p>
         </motion.div>
 
