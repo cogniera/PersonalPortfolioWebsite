@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 import { Download, ExternalLink } from "lucide-react";
 
-export default function Resume() {
+export function Resume() {
   return (
     <section
       id="resume"
