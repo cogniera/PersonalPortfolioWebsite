@@ -80,7 +80,7 @@ export function Hero() {
                 className="inline-block"
               >
                 <span className="px-4 py-2 rounded-full bg-gradient-to-r from-blue-600/20 to-purple-600/20 border border-blue-500/30 text-blue-300 backdrop-blur-sm text-sm sm:text-base">
-                  AI • Machine Learning • Research
+                  RAG • Machine Learning • Research
                 </span>
               </motion.div>
 
@@ -90,10 +90,10 @@ export function Hero() {
                 transition={{ delay: 0.3, duration: 0.6 }}
                 className="text-white"
               >
-                Building the Future
+                Building Frontier Projects
                 <br />
                 <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                  of Intelligence
+                  from first principles 
                 </span>
               </motion.h1>
 
@@ -103,8 +103,7 @@ export function Hero() {
                 transition={{ delay: 0.4, duration: 0.6 }}
                 className="text-xl text-gray-400 max-w-lg leading-relaxed"
               >
-                Machine Learning Engineer specializing in large language models,
-                RAG systems, and production-grade AI infrastructure that scales.
+                Computer Engineering Student at the Unversity of Waterloo passionate about RAG for long form content.
               </motion.p>
             </div>
 
@@ -115,7 +114,7 @@ export function Hero() {
               transition={{ delay: 0.5, duration: 0.6 }}
               className="lg:hidden text-base sm:text-lg text-gray-400 leading-relaxed px-4 max-w-md mx-auto"
             >
-              ML Engineer building intelligent systems with LLMs, RAG, and production AI infrastructure.
+              Computer Engineering Student at the Unversity of Waterloo passionate about RAG for long form content.
             </motion.p>
 
             <motion.div
@@ -124,11 +123,11 @@ export function Hero() {
               transition={{ delay: 0.6, duration: 0.6 }}
               className="flex flex-col sm:flex-row flex-wrap gap-4 justify-center lg:justify-start px-4 lg:px-0"
             >
-              <button className="group px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white flex items-center justify-center gap-2 hover:shadow-[0_0_40px_rgba(96,165,250,0.4)] active:scale-95 transition-all duration-300 min-h-[48px]">
+              <a href = "#projects" className="group px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white flex items-center justify-center gap-2 hover:shadow-[0_0_40px_rgba(96,165,250,0.4)] active:scale-95 transition-all duration-300 min-h-[48px]">
                 View My Work
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-              </button>
-              <button className="px-6 sm:px-8 py-3 sm:py-4 bg-white/5 backdrop-blur-sm rounded-full text-white border border-white/10 hover:bg-white/10 hover:border-white/20 active:scale-95 transition-all duration-300 min-h-[48px]">
+              </a>
+              <a href = "#contact" className="px-6 sm:px-8 py-3 sm:py-4 bg-white/5 backdrop-blur-sm rounded-full text-white border border-white/10 hover:bg-white/10 hover:border-white/20 active:scale-95 transition-all duration-300 min-h-[48px]">
                 Get in Touch
               </button>
             </motion.div>
@@ -139,13 +138,13 @@ export function Hero() {
               transition={{ delay: 0.7, duration: 0.6 }}
               className="flex gap-6 pt-4 justify-center lg:justify-start"
             >
-              <a href="#" className="text-gray-400 hover:text-white transition-colors active:scale-95 min-w-[48px] min-h-[48px] flex items-center justify-center">
+              <a href="github.com/cogniera" className="text-gray-400 hover:text-white transition-colors active:scale-95 min-w-[48px] min-h-[48px] flex items-center justify-center">
                 <Github className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors active:scale-95 min-w-[48px] min-h-[48px] flex items-center justify-center">
+              <a href="https://www.linkedin.com/in/paarth-sharma-engineering/" className="text-gray-400 hover:text-white transition-colors active:scale-95 min-w-[48px] min-h-[48px] flex items-center justify-center">
                 <Linkedin className="w-6 h-6" />
               </a>
-              <a href="#" className="text-gray-400 hover:text-white transition-colors active:scale-95 min-w-[48px] min-h-[48px] flex items-center justify-center">
+              <a href="mailto:paarths376@gmail.com" className="text-gray-400 hover:text-white transition-colors active:scale-95 min-w-[48px] min-h-[48px] flex items-center justify-center">
                 <Mail className="w-6 h-6" />
               </a>
             </motion.div>
