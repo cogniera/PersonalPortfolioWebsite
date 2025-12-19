@@ -129,7 +129,7 @@ export function Hero() {
               </a>
               <a href = "#contact" className="px-6 sm:px-8 py-3 sm:py-4 bg-white/5 backdrop-blur-sm rounded-full text-white border border-white/10 hover:bg-white/10 hover:border-white/20 active:scale-95 transition-all duration-300 min-h-[48px]">
                 Get in Touch
-              </button>
+              </a>
             </motion.div>
 
             <motion.div
