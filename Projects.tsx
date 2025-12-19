@@ -71,7 +71,7 @@ export function Projects() {
   };
 
   return (
-    <section className="py-20 sm:py-32 relative overflow-hidden">
+    <section id = "projects" className="py-20 sm:py-32 relative overflow-hidden">
       {/* Sci-fi grid background */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0" style={{
