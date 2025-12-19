@@ -72,7 +72,7 @@ export function Contact() {
               </div>
               <div>
                 <h3 className="text-white mb-1 text-base sm:text-lg">Email</h3>
-                <p className="text-gray-400 text-sm sm:text-base">your.email@example.com</p>
+                <p className="text-gray-400 text-sm sm:text-base">paarths376@gmail.com</p>
               </div>
             </div>
           </motion.a>
