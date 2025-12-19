@@ -11,19 +11,19 @@ export function Footer() {
 
           <div className="flex gap-4 sm:gap-6">
             <a
-              href="#"
+              href="hhtps://github.com/cogniera"
               className="text-gray-400 hover:text-white transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
               <Github className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="https://www.linkedin.com/in/paarth-sharma-engineering/"
               className="text-gray-400 hover:text-white transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
               <Linkedin className="w-5 h-5" />
             </a>
             <a
-              href="#"
+              href="mailto:paarths376@gmail.com"
               className="text-gray-400 hover:text-white transition-colors min-w-[44px] min-h-[44px] flex items-center justify-center"
             >
               <Mail className="w-5 h-5" />
