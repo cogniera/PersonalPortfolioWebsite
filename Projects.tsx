@@ -13,7 +13,7 @@ export function Projects() {
   shortDescription: "Empirical RAG systems research toward query-dependent retrieval",
   description: "Segmentation Study Phase 1 is a systems-oriented research project investigating retrieval failures in retrieval-augmented generation (RAG) pipelines for long and technical documents. Phase 1 empirically studies the limitations imposed by query-independent document segmentation, evaluating how chunking strategies, embeddings, and multi-stage reranking interact to constrain retrieval recall. Phase 2 aims to remove this limitation by introducing query-dependent segment extraction, where retrieval units are constructed after observing the query, enabling more precise and adaptive context selection. The project emphasizes controlled evaluation, failure-mode analysis, and scalability-aware design.",
   problem: "Most RAG systems rely on query-independent document segmentation, which imposes a hard recall ceiling in long and technical documents and prevents rerankers from recovering missing evidence",
-  technologies: ["Python", "LangChain", "Vector Databases", "Embedding Models", "Reranking Models", "Retrieval Evaluation", "lumber chunker", "Cohere Rerank4", "Cohere Embedding4"],
+  technologies: ["Python", "LangChain", "Retrieval Evaluation", "lumber chunker", "Cohere Rerank4", "Cohere Embedding4"],
   github: "https://github.com/cogniera/Rag_Segmentation_Study",
   gradient: "from-blue-500/20 to-cyan-500/20",
   glowColor: "rgba(59, 130, 246, 0.5)"}
@@ -135,40 +135,7 @@ export function Projects() {
           </div>
         </div>
 
-        {/* Deck - Remaining Cards */}
-        {deckCards.length > 0 && (
-          <div className="max-w-6xl mx-auto">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.6 }}
-              className="text-center mb-8"
-            >
-              <span className="text-gray-400 text-sm uppercase tracking-wider">More Projects</span>
-            </motion.div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
-              {deckCards.map((project, index) => (
-                <motion.div
-                  key={index + 3}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true }}
-                  transition={{ duration: 0.6, delay: index * 0.1 }}
-                >
-                  <ProjectCard
-                    project={project}
-                    index={index + 3}
-                    isFlipped={flippedCard === index + 3}
-                    onClick={() => handleCardClick(index + 3)}
-                    isActive={false}
-                    isDeck={true}
-                  />
-                </motion.div>
-              ))}
-            </div>
-          </div>
+        c
         )}
       </div>
     </section>
@@ -190,7 +157,7 @@ function ProjectCard({ project, index, isFlipped, onClick, isActive, isDeck = fa
       className="relative preserve-3d cursor-pointer group"
       style={{
         width: isDeck ? '100%' : '340px',
-        height: isDeck ? '320px' : '460px',
+        height: isDeck ? '360px' : '520px',
         transformStyle: 'preserve-3d',
         transition: 'transform 0.6s',
         transform: isFlipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
