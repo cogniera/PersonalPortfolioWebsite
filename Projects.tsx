@@ -134,9 +134,6 @@ export function Projects() {
             })}
           </div>
         </div>
-
-        c
-        )}
       </div>
     </section>
   );
