@@ -25,6 +25,7 @@ export function Projects() {
   problem: "Understanding whether track popularity can be predicted using audio features alone requires robust preprocessing, modeling, and evaluation pipelines",
   technologies: ["Python", "pandas", "NumPy", "scikit-learn", "Streamlit", "Plotly", "Docker"],
   github: "https://github.com/cogniera/SpotifySongPopularityPredictor",
+  demo: "https://www.linkedin.com/posts/paarth-sharma-engineering_built-a-full-end-to-end-machine-learning-activity-7399291304934985728-WZMo?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAFkm7xEBmaDcShGMzcmjourxYUrAoaEfY7Y",
   gradient: "from-orange-500/20 to-red-500/20",
   glowColor: "rgba(249, 115, 22, 0.5)"
 },
@@ -283,7 +284,7 @@ function ProjectCard({ project, index, isFlipped, onClick, isActive, isDeck = fa
             }}
           />
 
-          <div className="relative z-10 h-full flex flex-col">
+          <div className="relative z-10 h-full flex flex-col overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-blue-500/30 scrollbar-track-transparent">
             {/* Title */}
             <h3 className="text-white mb-4 text-xl">{project.title}</h3>
 
@@ -310,22 +311,27 @@ function ProjectCard({ project, index, isFlipped, onClick, isActive, isDeck = fa
 
             {/* Actions */}
             <div className="flex gap-3">
-              <a
+              {project.github && (
+                <a
                 href={project.github}
                 className="flex-1 px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl text-white text-sm flex items-center justify-center gap-2 hover:shadow-[0_0_30px_rgba(96,165,250,0.5)] transition-all"
                 onClick={(e) => e.stopPropagation()}
-              >
+                >
                 <Github className="w-4 h-4" />
                 GitHub
-              </a>
-              <a
-                href="#"
+                </a>
+              )}
+
+              {project.demo && (
+                <a
+                href={project.demo}
                 className="flex-1 px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white text-sm flex items-center justify-center gap-2 hover:bg-white/10 transition-all"
                 onClick={(e) => e.stopPropagation()}
-              >
+                >
                 <ExternalLink className="w-4 h-4" />
                 Demo
-              </a>
+                </a>
+              )}
             </div>
           </div>
         </div>
