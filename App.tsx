@@ -5,6 +5,7 @@ import { Projects } from './Projects';
 import { Experience } from './Experience';
 import { Contact } from './Contact';
 import { Footer } from './Footer';
+import { Resume } from './Resume';
 
 export default function App() {
   return (
@@ -28,6 +29,10 @@ export default function App() {
         
         <div id="contact">
           <Contact />
+        </div>
+
+        <div id = "resume">
+          <Resume/>
         </div>
       </main>
 
