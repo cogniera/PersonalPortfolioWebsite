@@ -25,7 +25,7 @@ export function Navigation() {
               className="text-white tracking-tight text-lg sm:text-xl"
             >
               <span className="bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                AI Engineer
+                Engineering Student 
               </span>
             </motion.div>
 
@@ -44,7 +44,8 @@ export function Navigation() {
                   <span className="absolute -bottom-1 left-0 w-0 h-px bg-gradient-to-r from-blue-400 to-purple-400 group-hover:w-full transition-all duration-300" />
                 </motion.a>
               ))}
-              <motion.button
+              <motion.a
+                href = "#resume"
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 transition={{ delay: 0.7 }}
@@ -91,7 +92,8 @@ export function Navigation() {
                     {item}
                   </motion.a>
                 ))}
-                <motion.button
+                <motion.a
+                  href = "#resume"
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.4 }}
