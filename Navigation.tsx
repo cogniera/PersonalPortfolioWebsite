@@ -52,7 +52,7 @@ export function Navigation() {
                 className="px-6 py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white text-sm hover:shadow-[0_0_30px_rgba(96,165,250,0.4)] transition-all duration-300"
               >
                 Resume
-              </motion.button>
+              </motion.a>
             </div>
 
             {/* Mobile Menu Button */}
@@ -100,7 +100,7 @@ export function Navigation() {
                   className="w-full mt-8 px-8 py-4 bg-gradient-to-r from-blue-600 to-purple-600 rounded-full text-white text-lg active:scale-95 transform transition-transform"
                 >
                   Resume
-                </motion.button>
+                </motion.a>
               </nav>
             </div>
           </motion.div>
