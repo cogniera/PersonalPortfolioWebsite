@@ -5,7 +5,7 @@ export function Resume() {
   return (
     <section
       id="resume"
-      className="relative py-20 sm:py-32 overflow-hidden"
+      className="relative py-20 sm:py-32"
     >
       {/* Subtle grid background */}
       <div className="absolute inset-0 opacity-10">
