@@ -275,6 +275,7 @@ function ProjectCard({ project, index, isFlipped, onClick, isActive, isDeck = fa
         }}
       >
         <div className="h-full p-6 sm:p-8 rounded-2xl bg-gradient-to-br from-gray-900/95 to-black/95 border border-blue-500/30 backdrop-blur-sm overflow-hidden relative">
+          
           {/* Glow effect */}
           <div 
             className="absolute inset-0 opacity-50"
@@ -283,59 +284,76 @@ function ProjectCard({ project, index, isFlipped, onClick, isActive, isDeck = fa
               filter: 'blur(30px)',
             }}
           />
-
-          <div className="relative z-10 h-full flex flex-col overflow-y-auto pr-2 scrollbar-thin scrollbar-thumb-blue-500/30 scrollbar-track-transparent">
-            {/* Title */}
-            <h3 className="text-white mb-4 text-xl">{project.title}</h3>
-
-            {/* Problem Solved */}
-            <div className="mb-6">
-              <span className="text-blue-400 text-xs uppercase tracking-wider mb-2 block">Problem Solved</span>
-              <p className="text-gray-300 text-sm leading-relaxed">{project.problem}</p>
-            </div>
-
-            {/* Technologies */}
-            <div className="mb-6 flex-grow">
-              <span className="text-blue-400 text-xs uppercase tracking-wider mb-2 block">Technologies</span>
-              <div className="flex flex-wrap gap-2">
-                {project.technologies.map((tech: string, i: number) => (
-                  <span
-                    key={i}
-                    className="px-3 py-1 rounded-lg bg-blue-500/10 border border-blue-500/30 text-xs text-blue-300"
-                  >
-                    {tech}
-                  </span>
-                ))}
+      
+          {/* CONTENT WRAPPER (IMPORTANT: min-h-0) */}
+          <div className="relative z-10 h-full min-h-0 flex flex-col">
+            
+            {/* Title (fixed) */}
+            <h3 className="text-white mb-4 text-xl flex-shrink-0">
+              {project.title}
+            </h3>
+      
+            {/* SCROLLABLE CONTENT */}
+            <div
+              className="flex-1 min-h-0 overflow-y-auto pr-2"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Problem Solved */}
+              <div className="mb-6">
+                <span className="text-blue-400 text-xs uppercase tracking-wider mb-2 block">
+                  Problem Solved
+                </span>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  {project.problem}
+                </p>
+              </div>
+      
+              {/* Technologies */}
+              <div className="mb-6">
+                <span className="text-blue-400 text-xs uppercase tracking-wider mb-2 block">
+                  Technologies
+                </span>
+                <div className="flex flex-wrap gap-2">
+                  {project.technologies.map((tech: string, i: number) => (
+                    <span
+                      key={i}
+                      className="px-3 py-1 rounded-lg bg-blue-500/10 border border-blue-500/30 text-xs text-blue-300"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
               </div>
             </div>
-
-            {/* Actions */}
-            <div className="flex gap-3">
+      
+            {/* ACTION BUTTONS (fixed bottom) */}
+            <div className="flex gap-3 flex-shrink-0 pt-2">
               {project.github && (
                 <a
-                href={project.github}
-                className="flex-1 px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl text-white text-sm flex items-center justify-center gap-2 hover:shadow-[0_0_30px_rgba(96,165,250,0.5)] transition-all"
-                onClick={(e) => e.stopPropagation()}
+                  href={project.github}
+                  className="flex-1 px-4 py-3 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl text-white text-sm flex items-center justify-center gap-2 hover:shadow-[0_0_30px_rgba(96,165,250,0.5)] transition-all"
+                  onClick={(e) => e.stopPropagation()}
                 >
-                <Github className="w-4 h-4" />
-                GitHub
+                  <Github className="w-4 h-4" />
+                  GitHub
                 </a>
               )}
-
+      
               {project.demo && (
                 <a
-                href={project.demo}
-                className="flex-1 px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white text-sm flex items-center justify-center gap-2 hover:bg-white/10 transition-all"
-                onClick={(e) => e.stopPropagation()}
+                  href={project.demo}
+                  className="flex-1 px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white text-sm flex items-center justify-center gap-2 hover:bg-white/10 transition-all"
+                  onClick={(e) => e.stopPropagation()}
                 >
-                <ExternalLink className="w-4 h-4" />
-                Demo
+                  <ExternalLink className="w-4 h-4" />
+                  Demo
                 </a>
               )}
             </div>
           </div>
         </div>
       </div>
+      
     </div>
   );
 }
