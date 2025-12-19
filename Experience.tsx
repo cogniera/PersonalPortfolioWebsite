@@ -10,7 +10,7 @@ export function Experience() {
   achievements: [
     "Developed and maintained automated test suites using Java, Selenium, and the Page Object Model (POM)",
     "Executed functional and regression testing across multiple releases, identifying defects and verifying fixes",
-    "Collaborated with developers to improve test coverage and overall system reliability"
+    "Collaborated with developers to improve test coverage and overall system reliability",
     "Used PhP (laravel) on the website with react and css"
   ]
 },
