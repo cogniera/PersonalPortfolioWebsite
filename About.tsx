@@ -19,28 +19,27 @@ export function About() {
           <span className="text-blue-400 uppercase tracking-wider mb-4 block text-sm">About</span>
           <h2 className="text-white mb-4 sm:mb-6 text-3xl sm:text-4xl lg:text-5xl">Mission & Approach</h2>
           <p className="text-base sm:text-xl text-gray-400 leading-relaxed px-4">
-            I build intelligent systems that bridge the gap between cutting-edge research 
-            and production-ready solutions. My focus is on creating AI that's not just 
-            powerful, but reliable, scalable, and thoughtfully designed.
+            I am building side projects trying to bridge the gap between cutting-edge research 
+            and production-ready solutions. My focus is on using the power of Academia for solving modern problems.
           </p>
         </motion.div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {[
             {
-              icon: Brain,
-              title: "Deep Learning",
-              description: "Expertise in transformer architectures, neural networks, and state-of-the-art models for NLP and computer vision."
+            icon: Brain,
+            title: "Machine Learning Systems",
+            description: "Experience working with transformer-based models, retrieval pipelines, and empirical evaluation of NLP systems."
             },
             {
-              icon: Code2,
-              title: "Production Systems",
-              description: "Building robust ML pipelines, MLOps infrastructure, and scalable deployment strategies for real-world applications."
+            icon: Code2,
+            title: "Applied ML Infrastructure",
+            description: "Building and evaluating end-to-end ML pipelines with attention to data preprocessing, retrieval behavior, and system-level trade-offs."
             },
             {
-              icon: Sparkles,
-              title: "RAG & LLMs",
-              description: "Designing and implementing retrieval-augmented generation systems that combine knowledge bases with language models."
+            icon: Sparkles,
+            title: "Retrieval & RAG",
+            description: "Designing retrieval-augmented generation pipelines and studying how chunking, embeddings, and reranking affect retrieval quality."
             }
           ].map((item, index) => (
             <motion.div
